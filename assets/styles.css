@@ -259,6 +259,55 @@ summary:focus-visible {
   border: 1px solid var(--stroke);
 }
 
+.case-reader {
+  margin-top: 10px;
+  border-top: 1px solid var(--stroke);
+  padding-top: 10px;
+}
+
+.case-reader summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.case-reader summary::-webkit-details-marker {
+  display: none;
+}
+
+.case-reader summary::after {
+  content: "+";
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.case-reader[open] summary::after {
+  content: "-";
+}
+
+.case-content {
+  margin-top: 10px;
+  color: var(--muted);
+}
+
+.case-content h4 {
+  margin: 12px 0 6px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text);
+}
+
+.case-actions {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 .text-link {
   display: inline-flex;
   gap: 6px;
