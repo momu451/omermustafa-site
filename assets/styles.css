@@ -289,11 +289,11 @@ textarea {
   z-index: 1;
 }
 
-.gated {
+.gated-items {
   transition: filter 0.3s ease, opacity 0.3s ease;
 }
 
-.locked .gated {
+.locked .gated-items {
   filter: blur(6px);
   opacity: 0.45;
   pointer-events: none;

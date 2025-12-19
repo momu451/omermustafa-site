@@ -4,11 +4,11 @@
   const gateButton = document.getElementById('gate-open');
   const form = document.getElementById('contact-form');
   const status = document.getElementById('form-status');
-  const gatedSections = document.querySelectorAll('.gated');
+  const gatedBlocks = document.querySelectorAll('.gated-items');
 
   const unlock = () => {
     body.classList.remove('locked');
-    gatedSections.forEach((section) => section.setAttribute('aria-hidden', 'false'));
+    gatedBlocks.forEach((section) => section.setAttribute('aria-hidden', 'false'));
     if (gate) {
       gate.setAttribute('aria-hidden', 'true');
       gate.classList.add('hidden');
