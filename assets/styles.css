@@ -126,8 +126,15 @@ summary:focus-visible {
 
 .layout {
   display: grid;
-  gap: 8px;
+  gap: 18px;
   padding: 0 8vw 24px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.column {
+  display: grid;
+  gap: 12px;
 }
 
 .section {
@@ -449,16 +456,8 @@ textarea {
   }
 
   .layout {
-    grid-template-columns: 1.15fr 0.85fr;
+    grid-template-columns: 1.2fr 0.8fr;
     align-items: start;
-  }
-
-  .fold-left {
-    grid-column: 1;
-  }
-
-  .fold-right {
-    grid-column: 2;
   }
 
   details summary {
