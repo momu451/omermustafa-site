@@ -18,4 +18,4 @@ Phone and address are intentionally omitted. Contact is via the form only.
 This site uses Formspree for contact requests. Update the endpoint in `index.html` if needed.
 
 ## Media credits
-Images are sourced from Unsplash. Icons are from Tabler Icons (MIT).
+Images are sourced from Unsplash.
